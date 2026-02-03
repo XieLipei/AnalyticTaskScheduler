@@ -1,0 +1,105 @@
+# 论文分析系统配置文件
+# Configuration file for Academic Paper Analyzer
+
+analysis_settings:
+  # 分析语言 / Analysis Language
+  language: "zh-CN"  # 中文 or "en" for English
+  
+  # 输出格式 / Output Format
+  output_format: "markdown"  # markdown, json, or text
+  
+  # 详细程度 / Detail Level
+  detail_level: "comprehensive"  # comprehensive, standard, or brief
+  
+  # 是否包含模板 / Include Template
+  include_template: true
+
+# 各个章节的权重和重要性标记
+# Section weights and importance markers
+section_weights:
+  abstract_translation: 1
+  method_motivation: 2
+  method_design: 5  # 最重要的部分 / Most important section
+  method_comparison: 3
+  experimental_performance: 3
+  learning_and_application: 2
+  summary: 2
+
+# 方法设计部分的详细要求
+# Detailed requirements for method design section
+method_design_requirements:
+  # Pipeline 最少步骤数
+  min_pipeline_steps: 3
+  
+  # Pipeline 最多步骤数
+  max_pipeline_steps: 10
+  
+  # 是否需要图示说明
+  require_diagrams: false
+  
+  # 是否需要代码示例
+  require_code_examples: false
+  
+  # 技术细节深度
+  technical_detail_depth: "high"  # high, medium, or low
+
+# 方法对比表格的配置
+# Method comparison table configuration
+comparison_table:
+  # 对比维度
+  comparison_dimensions:
+    - "优点 (Advantages)"
+    - "缺点 (Disadvantages)"
+    - "改进点 (Improvements)"
+    - "适用场景 (Use Cases)"
+    - "计算复杂度 (Computational Complexity)"
+  
+  # 最多对比方法数
+  max_methods: 5
+
+# 实验分析要求
+# Experimental analysis requirements
+experimental_analysis:
+  # 需要的最少指标数量
+  min_metrics: 3
+  
+  # 需要的最少数据集数量
+  min_datasets: 2
+  
+  # 是否需要统计显著性分析
+  require_statistical_significance: true
+
+# 总结部分配置
+# Summary section configuration
+summary_config:
+  # 核心思想最大字数
+  max_core_idea_chars: 20
+  
+  # 速记Pipeline步骤数范围
+  pipeline_steps_range: [3, 5]
+  
+  # 使用自明性语言（不用专业术语）
+  use_self_explanatory_language: true
+
+# 输出文件配置
+# Output file configuration
+output:
+  # 默认输出目录
+  default_output_dir: "analyses"
+  
+  # 文件命名模式
+  filename_pattern: "{paper_title}_analysis_{date}.md"
+  
+  # 是否自动保存
+  auto_save: true
+  
+  # 是否创建备份
+  create_backup: false
+
+# 自定义提示词（如需要）
+# Custom prompts (if needed)
+custom_prompts:
+  # 可以在这里添加自定义的分析提示
+  # Add custom analysis prompts here
+  enabled: false
+  prompts: {}

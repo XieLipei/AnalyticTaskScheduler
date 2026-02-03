@@ -1,0 +1,34 @@
+# Requirements for Academic Paper Methodology Analyzer
+# 学术论文方法分析系统依赖
+
+# Core dependencies
+# 核心依赖
+# None required for basic functionality - uses Python standard library only
+# 基本功能无需额外依赖 - 仅使用Python标准库
+
+# Optional dependencies for enhanced features
+# 可选依赖（增强功能）
+
+# For YAML configuration support (optional)
+# YAML配置文件支持（可选）
+# pyyaml>=6.0
+
+# For colored terminal output (optional)
+# 彩色终端输出（可选）
+# colorama>=0.4.6
+
+# For JSON schema validation (optional)
+# JSON模式验证（可选）
+# jsonschema>=4.17.0
+
+# For markdown processing (optional)
+# Markdown处理（可选）
+# markdown>=3.4.0
+
+# Development dependencies
+# 开发依赖
+# pytest>=7.2.0
+# pytest-cov>=4.0.0
+# black>=23.1.0
+# flake8>=6.0.0
+# mypy>=1.0.0
